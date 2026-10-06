@@ -60,7 +60,7 @@ public class PerceptronAND {
         // 4b. Imprimir el valor óptimo del bias[cite: 1].
         System.out.println("b. El valor optimo del bias (b) es: " + this.b);
         
-        System.out.println("\nc. Calculos -paso a paso- para cada patron[cite: 1]:");
+        System.out.println("\nc. Calculos -paso a paso- para cada patron:");
         // 4c. Imprimir los cálculos de Suma Ponderada y Función de Activación por patrón[cite: 1].
         for (int i = 0; i < entradas.length; i++) {
             int x1 = entradas[i][0];
