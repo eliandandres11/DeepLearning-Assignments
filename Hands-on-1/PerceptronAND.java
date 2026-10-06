@@ -75,7 +75,7 @@ public class PerceptronAND {
         int[][] entradas = {
             {0, 0}, {0, 1}, {1, 0}, {1, 1}
         };
-        // Resultados para el AND (solo el 1 y 1 da 1)
+        // Resultados para el AND
         int[] salidas = {0, 0, 0, 1};
 
         PerceptronAND p = new PerceptronAND();

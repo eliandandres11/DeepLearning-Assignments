@@ -26,13 +26,15 @@ public class PerceptronOR {
                 int x2 = entradas[i][1];
                 int salidaReal = salidasEsperadas[i];
 
-                // --- FORMULA 1: LA SUMA PONDERADA ---
+                // FORMULA 1: LA SUMA PONDERADA 
+                // Multiplica entradas por pesos y suma las bias de w1 y w2
                 double sumaPonderada = (this.w1 * x1) + (this.w2 * x2) + this.b;
 
-                // --- FORMULA 2: LA FUNCION DE ACTIVACION ---
-                //Ahora es "mayor o igual a cero" (>= 0)
+                // FORMULA 2: LA FUNCION DE ACTIVACION
+                // si la suma dio 0 o positivo, predice un 1. Si dio negativo, predice un 0.
                 int miPrediccion = (sumaPonderada >= 0) ? 1 : 0;
-
+                
+                //Si son iguales, el error da 0
                 int error = salidaReal - miPrediccion;
 
                 if (error != 0) {
