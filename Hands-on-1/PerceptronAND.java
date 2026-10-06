@@ -26,7 +26,7 @@ public class PerceptronAND {
                 int salidaReal = salidasEsperadas[i];
 
                 // FORMULA 1: LA SUMA PONDERADA
-                // Multiplica entradas por pesos y suma el bias
+                // Multiplica entradas por pesos y suma las bias de w1 y w2 
                 double sumaPonderada = (this.w1 * x1) + (this.w2 * x2) + this.b;
 
                 // FORMULA 2: LA FUNCION DE ACTIVACION
