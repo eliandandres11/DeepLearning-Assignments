@@ -63,7 +63,7 @@ public class PerceptronOR {
         System.out.println("b. El valor optimo del bias (b) es: " + String.format("%.1f", this.b));
         
         // 4c. Imprimir los cálculos paso a paso para comprobar que convergió correctamente[cite: 3].
-        System.out.println("\nc. Calculos -paso a paso- para cada patron[cite: 3]:");
+        System.out.println("\nc. Calculos -paso a paso- para cada patron:");
         for (int i = 0; i < entradas.length; i++) {
             int x1 = entradas[i][0];
             int x2 = entradas[i][1];
